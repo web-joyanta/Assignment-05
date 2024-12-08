@@ -16,6 +16,7 @@ document.getElementById("donate-button-01").addEventListener("click", function (
   // Show Modal
   donate_modal.showModal();
 });
+
 // Donate Item 02
 document.getElementById("donate-button-02").addEventListener("click", function () {
   const inputDonate = getInputFieldValueById("input-donate-amount-02");
@@ -34,6 +35,7 @@ document.getElementById("donate-button-02").addEventListener("click", function (
   // Show Modal
   donate_modal.showModal();
 });
+
 // Donate Item 03
 document.getElementById("donate-button-03").addEventListener("click", function () {
   const inputDonate = getInputFieldValueById("input-donate-amount-03");
