@@ -17,7 +17,7 @@ document.getElementById("donate-button-01").addEventListener("click", function (
   // History details
   const dateTime = currentDataAndTime();
   const div = document.createElement("div");
-  div.innerHTML = `<h4>${inputDonate} Taka is Donated for ${historyTitle}</h4>
+  div.innerHTML = `<h4 class = "text-xl font-semibold">${inputDonate} Taka is Donated for ${historyTitle}</h4>
   <p class = "bg-slate-50 p-2 rounded-lg mt-2">${dateTime}</p>`;
   div.classList.add("border-2", "border-slate-200", "p-8", "mt-4", "rounded-xl", "text-lg", "font-medium");
   document.getElementById("history-container").appendChild(div);
@@ -44,7 +44,7 @@ document.getElementById("donate-button-02").addEventListener("click", function (
   // History details
   const dateTime = currentDataAndTime();
   const div = document.createElement("div");
-  div.innerHTML = `<h4>${inputDonate} Taka is Donated for ${historyTitle}</h4>
+  div.innerHTML = `<h4 class = "text-xl font-semibold">${inputDonate} Taka is Donated for ${historyTitle}</h4>
   <p class = "bg-slate-50 p-2 rounded-lg mt-2">${dateTime}</p>`;
   div.classList.add("border-2", "border-slate-200", "p-8", "mt-4", "rounded-xl", "text-lg", "font-medium");
   document.getElementById("history-container").appendChild(div);
@@ -71,7 +71,7 @@ document.getElementById("donate-button-03").addEventListener("click", function (
   // History details
   const dateTime = currentDataAndTime();
   const div = document.createElement("div");
-  div.innerHTML = `<h4>${inputDonate} Taka is Donated for ${historyTitle}</h4>
+  div.innerHTML = `<h4 class = "text-xl font-semibold">${inputDonate} Taka is Donated for ${historyTitle}</h4>
   <p class = "bg-slate-50 p-2 rounded-lg mt-2">${dateTime}</p>`;
   div.classList.add("border-2", "border-slate-200", "p-8", "mt-4", "rounded-xl", "text-lg", "font-medium");
   document.getElementById("history-container").appendChild(div);

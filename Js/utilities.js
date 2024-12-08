@@ -28,7 +28,7 @@ function setButtonHoverSwitching(activeButtonId, inactiveButtonId) {
   // Active button
   const activeButton = document.getElementById(activeButtonId);
   activeButton.classList.remove("border", "border-[#1111114D]");
-  activeButton.classList.add("bg-[#B4F461]", "hover:bg-[#B1F130]", "mr-4");
+  activeButton.classList.add("bg-[#B4F461]", "hover:bg-[#B1F130]");
   // Inactive button
   const inactiveButton = document.getElementById(inactiveButtonId);
   inactiveButton.classList.remove("bg-[#B4F461]", "hover:bg-[#B1F130]");
