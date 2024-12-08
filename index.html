@@ -28,34 +28,34 @@
   <body class="lexend-font">
     <header class="sticky top-0">
       <!-- header section -->
-      <div class="bg-[#F9F7F3] pt-6 pb-14">
+      <div class="bg-[#F9F7F3] py-6">
         <div class="max-w-[1170px] mx-auto flex justify-between items-center px-4">
           <div>
-            <button class="bg-[#B4F461] text-base font-semibold px-8 py-3 rounded-lg mr-4">Blog</button>
+            <button class="btn bg-[#B4F461] hover:bg-[#B1F130] text-base font-semibold px-8 py-3 rounded-lg mr-4">Blog</button>
           </div>
           <div class="lg:flex items-center">
             <img class="lg:block hidden" src="assets/logo.png" alt="" />
-            <h2 class="text-xl font-semibold pl-4 text-center">Donate Bangladesh</h2>
+            <h2 class="text-2xl font-bold pl-4 text-center">Donate Bangladesh</h2>
           </div>
           <div class="flex items-center">
             <img src="assets/coin.png" alt="" />
-            <p class="text-xl font-medium lg:pl-3 pl-1 text-center"><span>5500</span> BDT</p>
+            <p class="text-xl font-medium lg:pl-3 pl-1 text-center"><span id="balance-amount">5500</span> BDT</p>
           </div>
         </div>
       </div>
       <!-- header button -->
-      <div class="bg-gray-50 pt-16 pb-8">
+      <div class="bg-slate-50/90 backdrop-blur-xl pt-12 pb-6">
         <div class="max-w-[1170px] mx-auto flex justify-center items-center px-4">
-          <button class="bg-[#B4F461] text-base font-semibold px-8 py-3 rounded-lg mr-4">Donation</button>
-          <button class="bg-transparent text-base font-semibold px-8 py-3 rounded-lg border border-[#1111114D]">History</button>
+          <button class="btn bg-[#B4F461] hover:bg-[#B1F130] text-base font-semibold px-8 py-3 rounded-lg mr-4">Donation</button>
+          <button class="btn text-base font-semibold px-8 py-3 rounded-lg border border-[#1111114D]">History</button>
         </div>
       </div>
     </header>
     <!-- main section -->
     <main>
-      <section>
+      <section class="max-w-[1170px] mx-auto">
         <!-- Donate Item 01 -->
-        <div class="max-w-[1170px] mx-auto px-4 mt-8">
+        <div class="px-4 mt-8">
           <div class="border border-[#1111111A] rounded-2xl p-8">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
               <!-- img -->
@@ -64,9 +64,9 @@
               </div>
               <!-- content -->
               <div>
-                <div class="bg-[#1111110D] flex items-center px-4 py-2 rounded-lg lg:w-1/4 w-32">
+                <div class="bg-[#1111110D] flex items-center px-4 py-2 rounded-lg lg:w-2/6 w-32">
                   <img src="assets/coin.png" alt="" />
-                  <p class="pl-2 text-base font-normal"><span>0</span> BDT</p>
+                  <p class="pl-2 text-base font-normal"><span id="donate-amount-01">1020</span> BDT</p>
                 </div>
                 <h2 class="text-xl font-semibold py-4">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p class="text-[#111111B3] font-light text-base">
@@ -76,17 +76,23 @@
                   in need.
                 </p>
                 <input
+                  id="input-donate-amount-01"
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered placeholder:font-light w-full max-w-full mt-7 mb-4"
                 />
-                <button class="btn bg-[#B4F461] text-base font-semibold px-8 py-3 rounded-lg w-full max-w-full">Donation</button>
+                <button
+                  id="donate-button-01"
+                  class="btn bg-[#B4F461] hover:bg-[#B1F130] text-base font-semibold px-8 py-3 rounded-lg w-full max-w-full"
+                >
+                  Donation
+                </button>
               </div>
             </div>
           </div>
         </div>
         <!-- Donate Item 02 -->
-        <div class="max-w-[1170px] mx-auto px-4 mt-8">
+        <div class="px-4 mt-8">
           <div class="border border-[#1111111A] rounded-2xl p-8">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
               <!-- img -->
@@ -95,26 +101,34 @@
               </div>
               <!-- content -->
               <div>
-                <div class="bg-[#1111110D] flex items-center px-4 py-2 rounded-lg lg:w-1/4 w-32">
+                <div class="bg-[#1111110D] flex items-center px-4 py-2 rounded-lg lg:w-2/6 w-32">
                   <img src="assets/coin.png" alt="" />
-                  <p class="pl-2 text-base font-normal"><span>600 </span> BDT</p>
+                  <p class="pl-2 text-base font-normal"><span>1600 </span> BDT</p>
                 </div>
                 <h2 class="text-xl font-semibold py-4">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="text-[#111111B3] font-light text-base">
-                  The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                  The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your
+                  generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those
+                  affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of
+                  this disaster. Every contribution counts towards making a real difference. Please consider donating today to
+                  assist those in urgent need.
                 </p>
                 <input
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered placeholder:font-light w-full max-w-full mt-7 mb-4"
                 />
-                <button class="btn bg-[#B4F461] text-base font-semibold px-8 py-3 rounded-lg w-full max-w-full">Donation</button>
+                <button
+                  class="btn bg-[#B4F461] hover:bg-[#B1F130] text-base font-semibold px-8 py-3 rounded-lg w-full max-w-full"
+                >
+                  Donation
+                </button>
               </div>
             </div>
           </div>
         </div>
         <!-- Donate Item 03 -->
-        <div class="max-w-[1170px] mx-auto px-4 mt-8">
+        <div class="px-4 mt-8">
           <div class="border border-[#1111111A] rounded-2xl p-8">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
               <!-- img -->
@@ -123,26 +137,53 @@
               </div>
               <!-- content -->
               <div>
-                <div class="bg-[#1111110D] flex items-center px-4 py-2 rounded-lg lg:w-1/4 w-32">
+                <div class="bg-[#1111110D] flex items-center px-4 py-2 rounded-lg lg:w-2/6 w-32">
                   <img src="assets/coin.png" alt="" />
                   <p class="pl-2 text-base font-normal"><span>2400</span> BDT</p>
                 </div>
                 <h2 class="text-xl font-semibold py-4">Aid for Injured in the Quota Movement</h2>
                 <p class="text-[#111111B3] font-light text-base">
-                  The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                  The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your
+                  support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By
+                  contributing, you help ensure that injured individuals receive the care and support they need during this
+                  challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery.
+                  Please consider making a donation to support these brave individuals in their time of need.
                 </p>
                 <input
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered placeholder:font-light w-full max-w-full mt-7 mb-4"
                 />
-                <button class="btn bg-[#B4F461] text-base font-semibold px-8 py-3 rounded-lg w-full max-w-full">Donation</button>
+                <button
+                  class="btn bg-[#B4F461] hover:bg-[#B1F130] text-base font-semibold px-8 py-3 rounded-lg w-full max-w-full"
+                >
+                  Donation
+                </button>
               </div>
             </div>
           </div>
         </div>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="donate_modal_01" class="modal flex items-center justify-center">
+          <div class="modal-box text-center flex flex-col items-center">
+            <h3 class="text-5xl font-bold">Congrats!</h3>
+            <img src="assets/coin.png" alt="Coin Image" class="my-4 w-16" />
+            <p class="py-4">You Have Donate for Humankind</p>
+            <span class="text-xl font-bold">successfully</span>
+            <div class="modal-action flex justify-center w-full">
+              <form method="dialog">
+                <button class="btn">close confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </section>
     </main>
+    <!-- footer section -->
     <footer class="bg-[#F9F7F3] py-20 mt-20"></footer>
+
+    <script src="Js/utilities.js"></script>
+    <script src="Js/donate.js"></script>
+    <script src="Js/features.js"></script>
   </body>
 </html>
