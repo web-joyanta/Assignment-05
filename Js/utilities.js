@@ -13,9 +13,9 @@ function getTextFieldValueById(TextFieldId) {
   return textNumber;
 }
 // get inner Text
-function getTextFieldToInnerTextById(TextFieldId){
-    const text = document.getElementById(TextFieldId).innerText;
-    return text;
+function getTextFieldToInnerTextById(TextFieldId) {
+  const text = document.getElementById(TextFieldId).innerText;
+  return text;
 }
 // Section hidden class add & remove
 function ShowSectionById(sectionId) {
@@ -33,4 +33,12 @@ function setButtonHoverSwitching(activeButtonId, inactiveButtonId) {
   const inactiveButton = document.getElementById(inactiveButtonId);
   inactiveButton.classList.remove("bg-[#B4F461]", "hover:bg-[#B1F130]");
   inactiveButton.classList.add("border", "border-[#1111114D]");
+}
+// Current date & time
+function currentDataAndTime() {
+  let today = new Date();
+  const currentDate = today.toDateString();
+  const currentTime = today.toLocaleString();
+  const dataTime = `Date: ${currentDate}, Time: ${currentTime}`;
+  return dataTime;
 }
